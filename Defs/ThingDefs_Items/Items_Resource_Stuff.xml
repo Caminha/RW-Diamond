@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Diamondrough</defName>
+    <label>diamond</label>
+    <description>A metastable allotrope of carbon. Is rather brittle and sharp, and also is very valuable.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Diamond/Diamond</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>First</resourceReadoutPriority>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>7</MarketValue>
+      <Mass>0.08</Mass>
+      <SharpDamageMultiplier>1.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>500</stackLimit>
+    <smallVolume>false</smallVolume>
+    <deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <color>(190,225,240)</color>
+      <commonality>0.05</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>20</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.3</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <Beauty>6</Beauty>
+        <MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  </Defs>

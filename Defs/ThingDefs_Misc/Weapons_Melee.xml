@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="DiamondMeleeWeapon" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Spacer</techLevel>
+		<smeltable>false</smeltable>
+		<weaponTags>
+      <li>Melee</li>
+    </weaponTags>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_WeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+  
+  <!-- ===== REMOVE DIAMOND FROM VANILLA BLUNT ===== -->
+
+  <ThingDef Name="BaseMeleeWeapon_Blunt" ParentName="BaseMeleeWeapon" Abstract="True">
+    <recipeMaker>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <exceptedThingDefs>
+          <li>Silver</li>
+          <li>Gold</li>
+		  <li>Diamondrough</li>
+        </exceptedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+  
+  <!-- ============================================================== -->
+  
+  <ThingDef Name="DiamondMeleeWeapon_Sharp" ParentName="DiamondMeleeWeapon" Abstract="True">
+    <recipeMaker>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Root</li>
+      </categories>
+      <exceptedThingDefs>
+        <li>Silver</li>
+        <li>Gold</li>
+        <li>WoodLog</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+  
+  <!-- ============================================================== -->
+
+	<ThingDef ParentName="DiamondMeleeWeapon_Sharp">
+		<defName>DiamondWeapon_MonoShiv</defName>
+		<label>monomolecular shiv</label>
+		<description>An improvised knife-like weapon. Has a monomolecular blade.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Shiv</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<tradeability>Sellable</tradeability>
+		<costStuffCount>10</costStuffCount>
+		<costList>
+          <Diamondwire>1</Diamondwire>
+        </costList>
+		<statBases>
+			<WorkToMake>800</WorkToMake>
+			<Mass>0.4</Mass>
+			<MeleeWeapon_DamageAmount>9</MeleeWeapon_DamageAmount>
+			<DeteriorationRate>0.05</DeteriorationRate>
+			<MeleeWeapon_Cooldown>1.50</MeleeWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<recipeMaker>
+	        <skillRequirements>
+				<li>
+					<skill>Crafting</skill>
+					<minLevel>8</minLevel>
+				</li>
+	        </skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<meleeDamageDef>Cut</meleeDamageDef>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="DiamondMeleeWeapon_Sharp">
+		<defName>DiamondWeapon_Knife</defName>
+		<label>monomolecular knife</label>
+		<description>One of humankind's oldest tools, the knife is both an everyday tool and a deadly weapon. It has a monomolecular blade.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Knife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+          <Diamondwire>1</Diamondwire>
+        </costList>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>0.5</Mass>
+			<DeteriorationRate>0.05</DeteriorationRate>
+			<MeleeWeapon_DamageAmount>10</MeleeWeapon_DamageAmount>
+			<MeleeWeapon_Cooldown>1.60</MeleeWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<recipeMaker>
+	        <skillRequirements>
+			    <li>
+					<skill>Crafting</skill>
+					<minLevel>8</minLevel>
+			    </li>
+	        </skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<meleeDamageDef>Cut</meleeDamageDef>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="DiamondMeleeWeapon_Sharp">
+		<defName>DiamondWeapon_Gladius</defName>
+		<label>monomolecular gladius</label>
+		<description>A short sword of ancient design. Good for stabbing or slashing. It has a monomolecular blade.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Gladius</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+          <Diamondwire>2</Diamondwire>
+        </costList>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>0.85</Mass>
+			<DeteriorationRate>0.05</DeteriorationRate>
+			<MeleeWeapon_DamageAmount>14</MeleeWeapon_DamageAmount>
+			<MeleeWeapon_Cooldown>1.90</MeleeWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<recipeMaker>
+	        <skillRequirements>
+			    <li>
+					<skill>Crafting</skill>
+					<minLevel>8</minLevel>
+			    </li>
+	        </skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<meleeDamageDef>Cut</meleeDamageDef>
+			</li>
+		</verbs>
+  </ThingDef>
+  
+	<ThingDef ParentName="DiamondMeleeWeapon_Sharp">
+		<defName>DiamondWeapon_Spear</defName>
+		<label>monomolecular spear</label>
+		<description>A polearm tipped with a sharp point for stabbing opponents in melee combat. It has a monomolecular blade.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Spear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>90</costStuffCount>
+		<costList>
+          <Diamondwire>1</Diamondwire>
+		  <Diamondcut>1</Diamondcut>
+        </costList>
+		<statBases>
+			<WorkToMake>34000</WorkToMake>
+			<Mass>2</Mass>
+			<DeteriorationRate>0.05</DeteriorationRate>
+			<MeleeWeapon_DamageAmount>17</MeleeWeapon_DamageAmount>
+			<MeleeWeapon_Cooldown>2.25</MeleeWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<recipeMaker>
+	        <skillRequirements>
+			    <li>
+					<skill>Crafting</skill>
+					<minLevel>8</minLevel>
+			    </li>
+	        </skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<meleeDamageDef>Stab</meleeDamageDef>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="DiamondMeleeWeapon_Sharp">
+		<defName>DiamondWeapon_LongSword</defName>
+		<label>monomolecular longsword</label>
+		<description>The ancient weapon of kings, the longsword can be used for slashing or stabbing and is deadly in the right hands. It has a monomolecular blade.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/LongSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractPistol</soundInteract>
+		<costStuffCount>120</costStuffCount>
+		<costList>
+          <Diamondwire>2</Diamondwire>
+        </costList>
+		<statBases>
+			<WorkToMake>44000</WorkToMake>
+			<Mass>1.6</Mass>
+			<DeteriorationRate>0.05</DeteriorationRate>
+			<MeleeWeapon_DamageAmount>19</MeleeWeapon_DamageAmount>
+			<MeleeWeapon_Cooldown>2.45</MeleeWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<recipeMaker>
+	        <skillRequirements>
+			    <li>
+					<skill>Crafting</skill>
+					<minLevel>8</minLevel>
+			    </li>
+	        </skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<meleeDamageDef>Cut</meleeDamageDef>
+			</li>
+		</verbs>
+  </ThingDef>
+	
+</ThingDefs>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Diamondcut</defName>
+    <label>cut diamond</label>
+    <description>A diamond that was carefully cut to enhance its beauty. It is very valuable.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Diamond/DiamondCut</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+	<comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <statBases>
+	  <WorkToMake>15000</WorkToMake>
+      <MaxHitPoints>25</MaxHitPoints>
+      <MarketValue>2000</MarketValue>
+      <Mass>0.07</Mass>
+	  <Beauty>10</Beauty>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+	<costList>
+      <Diamondrough>1</Diamondrough>
+    </costList>
+	<recipeMaker>
+      <workSpeedStat>SculptingSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+	  <skillRequirements>
+			<li>
+				<skill>Artistic</skill>
+				<minLevel>5</minLevel>
+			</li>
+	  </skillRequirements>
+      <unfinishedThingDef>UnfinishedDiamond</unfinishedThingDef>
+      <effectWorking>CutStone</effectWorking>
+      <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+      <recipeUsers>
+        <li>TableSculpting</li>
+      </recipeUsers>
+	</recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Diamondwire</defName>
+    <label>diamond wire</label>
+    <description>A wire made of diamond. Extremely thin and can cause serios injuries if not handled with care.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Diamond/DiamondWire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <stackLimit>25</stackLimit>
+    <statBases>
+	  <WorkToMake>5000</WorkToMake>
+      <MaxHitPoints>25</MaxHitPoints>
+      <MarketValue>700</MarketValue>
+      <Mass>0.04</Mass>
+	  <Beauty>2</Beauty>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0.01</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+	<costList>
+      <Diamondrough>5</Diamondrough>
+    </costList>
+	<recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+	  <skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>7</minLevel>
+			</li>
+	  </skillRequirements>
+      <unfinishedThingDef>UnfinishedDiamondWire</unfinishedThingDef>
+      <effectWorking>CutStone</effectWorking>
+      <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+	</recipeMaker>
+  </ThingDef>
+  
+</Defs>

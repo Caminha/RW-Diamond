@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_SniperRifleDiamond</defName>
+    <label>improved sniper rifle</label>
+    <description>Ancient pattern military sniper rifle. Bolt action. Long range, great accuracy and power. Has improved lenses, but is even more innacurate at shorter ranges.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/SniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.88</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Gun_SniperRifle>1</Gun_SniperRifle>
+      <Diamondrough>1</Diamondrough>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_SniperRifle</projectileDef>
+        <warmupTime>4.0</warmupTime>
+        <range>45</range>
+        <soundCast>ShotSniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+  </ThingDef>
+
+</ThingDefs>
