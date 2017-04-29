@@ -17,7 +17,7 @@ NEW WEAPONS:
 
 IMPROVED SNIPER RIFLE - Can be produced at a Machining Table, has a better accuracy at longer ranges while shoter ranges are more innacurate. Requires 1 Sniper Rifle and 1 Cut Diamond.
 
-MONOMOLECULAR SHARP WEAPONS - They have higher damage and shorter cooldown, but slowly deteriorate. Can be produced at a Machining Table. Shivs and Knifes require 1 diamond wire; the Spear requires 1 diamond wire and 1 cut diamond; Gladius and Longsword require 2 wires.
+MONOFILAMENT WEAPONS - They have higher damage and shorter cooldown, but slowly deteriorate. Can be produced at a Machining Table. Shivs and Knifes require 1 diamond wire; the Spear requires 1 diamond wire and 1 cut diamond; Gladius and Longsword require 2 wires.
 
 ----	
 TWEAKED BUILDINGS:
