@@ -17,7 +17,7 @@
     <description>Rock containing bits of diamond.</description>
     <building>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>Diamondrough</mineableThing>
+      <mineableThing>DiamondRough</mineableThing>
       <mineableYield>5</mineableYield>
       <mineableScatterCommonality>0.065</mineableScatterCommonality>
       <mineableScatterLumpSizeRange>

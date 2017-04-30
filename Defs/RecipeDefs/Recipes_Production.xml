@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>MakeDiamondCloth</defName>
+		<label>Make hyperweave</label>
+		<jobString>Producing hyperweave</jobString>
+		<workAmount>25000</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<unfinishedThingDef>UnfinishedDiamondStuff</unfinishedThingDef>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>12</minLevel>
+			</li>
+		</skillRequirements>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DiamondWire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Synthread</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DiamondWire</li>
+				<li>Plasteel</li>
+				<li>Synthread</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>DiamondWire</li>
+				<li>Plasteel</li>
+				<li>Synthread</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Hyperweave>5</Hyperweave>
+		</products>
+	</RecipeDef>
+	
+</RecipeDefs>

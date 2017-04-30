@@ -46,7 +46,7 @@
         <exceptedThingDefs>
           <li>Silver</li>
           <li>Gold</li>
-		  <li>Diamondrough</li>
+		  <li>DiamondRough</li>
         </exceptedThingDefs>
       </defaultIngredientFilter>
     </recipeMaker>
@@ -83,7 +83,7 @@
 		<tradeability>Sellable</tradeability>
 		<costStuffCount>10</costStuffCount>
 		<costList>
-          <Diamondwire>1</Diamondwire>
+          <DiamondWire>1</DiamondWire>
         </costList>
 		<statBases>
 			<WorkToMake>800</WorkToMake>
@@ -129,7 +129,7 @@
 		<soundInteract>InteractPistol</soundInteract>
 		<costStuffCount>40</costStuffCount>
 		<costList>
-          <Diamondwire>1</Diamondwire>
+          <DiamondWire>1</DiamondWire>
         </costList>
 		<statBases>
 			<WorkToMake>8000</WorkToMake>
@@ -173,7 +173,7 @@
 		<soundInteract>InteractPistol</soundInteract>
 		<costStuffCount>50</costStuffCount>
 		<costList>
-          <Diamondwire>2</Diamondwire>
+          <DiamondWire>2</DiamondWire>
         </costList>
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
@@ -217,8 +217,8 @@
 		</graphicData>
 		<costStuffCount>90</costStuffCount>
 		<costList>
-          <Diamondwire>1</Diamondwire>
-		  <Diamondcut>1</Diamondcut>
+          <DiamondWire>1</DiamondWire>
+		  <DiamondCut>1</DiamondCut>
         </costList>
 		<statBases>
 			<WorkToMake>34000</WorkToMake>
@@ -263,7 +263,7 @@
 		<soundInteract>InteractPistol</soundInteract>
 		<costStuffCount>120</costStuffCount>
 		<costList>
-          <Diamondwire>2</Diamondwire>
+          <DiamondWire>2</DiamondWire>
         </costList>
 		<statBases>
 			<WorkToMake>44000</WorkToMake>

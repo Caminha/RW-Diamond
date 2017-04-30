@@ -19,7 +19,7 @@
     <costList>
       <Steel>100</Steel>
       <Component>3</Component>
-	  <Diamondrough>20</Diamondrough>
+	  <DiamondRough>20</DiamondRough>
     </costList>
     <placeWorkers>
       <li>PlaceWorker_ShowDeepResources</li>

@@ -2,12 +2,12 @@
 <Defs>
 
   <ThingDef ParentName="ResourceBase">
-    <defName>Diamondrough</defName>
+    <defName>DiamondRough</defName>
     <label>diamond</label>
     <description>A metastable allotrope of carbon. Is rather brittle and sharp, and also is very valuable.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Diamond/Diamond</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Item/Resource/Diamond/Diamond</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <resourceReadoutPriority>First</resourceReadoutPriority>
     <soundInteract>Silver_Drop</soundInteract>
@@ -15,38 +15,81 @@
     <useHitPoints>false</useHitPoints>
     <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MarketValue>7</MarketValue>
-      <Mass>0.08</Mass>
-      <SharpDamageMultiplier>1.5</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+		<MarketValue>7</MarketValue>
+		<Mass>0.08</Mass>
+		<SharpDamageMultiplier>1.5</SharpDamageMultiplier>
+		<BluntDamageMultiplier>0.5</BluntDamageMultiplier>
     </statBases>
     <thingCategories>
-      <li>ResourcesRaw</li>
+		<li>ResourcesRaw</li>
     </thingCategories>
     <stackLimit>500</stackLimit>
     <smallVolume>false</smallVolume>
     <deepCommonality>1</deepCommonality>
     <stuffProps>
-      <categories>
-        <li>Stony</li>
-      </categories>
-      <color>(190,225,240)</color>
-      <commonality>0.05</commonality>
-      <constructEffect>ConstructMetal</constructEffect>
-      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
-      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
-      <statOffsets>
-        <Beauty>20</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>0.3</MaxHitPoints>
-        <Flammability>0</Flammability>
-        <Beauty>6</Beauty>
-        <MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
-      </statFactors>
-      <smeltable>true</smeltable>
+		<categories>
+			<li>Stony</li>
+		</categories>
+		<color>(190,225,240)</color>
+		<commonality>0.05</commonality>
+		<constructEffect>ConstructMetal</constructEffect>
+		<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+		<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+		<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+		<statOffsets>
+			<Beauty>20</Beauty>
+		</statOffsets>
+		<statFactors>
+			<MaxHitPoints>0.3</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>6</Beauty>
+			<MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
+		</statFactors>
+		<smeltable>true</smeltable>
     </stuffProps>
   </ThingDef>
+  
+  <!--========= FABRICS =========-->
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Hyperweave</defName>
+    <label>hyperweave</label>
+    <description>High-tech nano-fibers woven into sheets. It is somewhat heavy, but is incredibly difficult to break. The secrets of its production are known only to the most advanced glitterworld cultures.</description>
+    <graphicData>
+		<texPath>Things/Item/Resource/Hyperweave</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+		<MarketValue>16</MarketValue>
+		<Mass>0.038</Mass>
+		<Flammability>0.2</Flammability>
+		<DeteriorationRate>0.5</DeteriorationRate>
+	</statBases>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0.18</commonality>
+      <color>(0,106,126)</color>
+      <statOffsets>
+        <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+        <ArmorRating_Heat>0.03</ArmorRating_Heat>
+      </statOffsets>
+      <statFactors>
+        <WorkToMake>1.8</WorkToMake>
+        <ArmorRating_Blunt>1.6</ArmorRating_Blunt>
+        <ArmorRating_Sharp>4.0</ArmorRating_Sharp>
+        <ArmorRating_Heat>2.0</ArmorRating_Heat>
+        <ArmorRating_Electric>0</ArmorRating_Electric>
+        <Insulation_Cold>1.1</Insulation_Cold>
+        <Insulation_Heat>1.1</Insulation_Heat>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+		<li>Textiles</li>
+    </thingCategories>
+  </ThingDef>
+  
   
   </Defs>

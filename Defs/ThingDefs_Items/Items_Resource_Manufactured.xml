@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="ResourceBase">
-    <defName>Diamondcut</defName>
+    <defName>DiamondCut</defName>
     <label>cut diamond</label>
     <description>A diamond that was carefully cut to enhance its beauty. It is very valuable.</description>
     <graphicData>
@@ -30,7 +30,7 @@
       <li>Manufactured</li>
     </thingCategories>
 	<costList>
-      <Diamondrough>1</Diamondrough>
+      <DiamondRough>1</DiamondRough>
     </costList>
 	<recipeMaker>
       <workSpeedStat>SculptingSpeed</workSpeedStat>
@@ -51,7 +51,7 @@
   </ThingDef>
   
   <ThingDef ParentName="ResourceBase">
-    <defName>Diamondwire</defName>
+    <defName>DiamondWire</defName>
     <label>diamond wire</label>
     <description>A wire made of diamond. Extremely thin and can cause serios injuries if not handled with care.</description>
     <graphicData>
@@ -74,7 +74,7 @@
       <li>Manufactured</li>
     </thingCategories>
 	<costList>
-      <Diamondrough>5</Diamondrough>
+      <DiamondRough>5</DiamondRough>
     </costList>
 	<recipeMaker>
       <workSpeedStat>SmithingSpeed</workSpeedStat>
